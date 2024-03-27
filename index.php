@@ -5,7 +5,7 @@ session_start();
 if (!isset ($_SESSION['username'])) {
     // Nếu không, chuyển hướng đến trang đăng nhập
     header('location: login.php');
-    exit(); // Dừng thực thi script
+    exit();
 }
 
 // Xử lý đăng xuất tài khoản
@@ -29,7 +29,7 @@ if ($_SESSION['role'] == 'admin') {
 
 <!-- Nội dung khác của trang -->
 
-<h2>THÔNG TIN NHÂN VIÊN</h2>
+<h1>THÔNG TIN NHÂN VIÊN</h1>
 
 <table>
     <tr>
@@ -73,16 +73,16 @@ if ($_SESSION['role'] == 'admin') {
             echo "<td>" . $row['Ten_NV'] . "</td>";
             echo "<td>";
             if ($row['Phai'] == 'NU') {
-                echo '<img src="images/woman.jpg" alt="Woman">';
+                echo '<img src="images/woman.png" alt="Woman">';
             } else {
-                echo '<img src="images/man.jpg" alt="Man">';
+                echo '<img src="images/man.png" alt="Man">';
             }
             echo "</td>";
             echo "<td>" . $row['Noi_Sinh'] . "</td>";
             echo "<td>" . $row['Ten_Phong'] . "</td>";
             echo "<td>" . $row['Luong'] . "</td>";
             if ($_SESSION['role'] == 'admin') {
-                echo '<td><a href="edit_employee.php?id=' . $row['Ma_NV'] . '"><img src="images/config.png" alt="Edit"></a> | <a href="delete_employee.php?id=' . $row['Ma_NV'] . '"><img src="images/delete.png" alt="Delete"></a></td>';
+                echo '<td><a href="edit_employee.php?id=' . $row['Ma_NV'] . '"><img src="images/pen.png" alt="Edit"></a> | <a href="delete_employee.php?id=' . $row['Ma_NV'] . '"><img src="images/bin.png" alt="Delete"></a></td>';
             }
             echo "</tr>";
         }

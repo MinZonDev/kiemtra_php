@@ -31,46 +31,51 @@ th,
 td {
     border: 1px solid black;
     padding: 8px;
+    text-align: center; /* Canh giữa nội dung trong cả ô */
 }
 
 th {
     background-color: #f2f2f2;
 }
 
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Màu cho hàng chẵn */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Màu cho hàng lẻ */
+}
+
 img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 .add-employee-btn {
     background-color: #4CAF50;
-    /* Màu xanh lá */
     color: white;
     padding: 10px 20px;
-    /* Kích thước padding */
     border: none;
     border-radius: 5px;
-    /* Bo tròn viền */
     cursor: pointer;
     margin-top: 20px;
-    /* Khoảng cách với phần tử trên */
 }
 
 .add-employee-btn:hover {
     background-color: #45a049;
-    /* Màu xanh lá nhạt khi hover */
 }
 
 footer {
     background-color: #333;
-    /* Màu nền xanh lá cây */
     padding: 10px;
-    /* Khoảng cách bên trong phần footer */
     color: white;
-    /* Màu văn bản */
     text-align: center;
-    /* Căn giữa văn bản */
 }
+
+h1 {
+    color: #FF0000;
+}
+
 
 form label {
     display: block;
@@ -101,7 +106,7 @@ form input[type="submit"]:hover {
 }
 
 h1 {
-    color: #333;
+    color: #FF0000;
 }
 
 select {
