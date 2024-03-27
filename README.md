@@ -1,4 +1,4 @@
-<h1>CÁC BƯỚC KHỞI CHẠY BÀI: <br/></h1>
+<h1 style={color: red}>CÁC BƯỚC KHỞI CHẠY BÀI: <br/></h1>
 <h3>BƯỚC 1:TẠO DATABASE TRÊN MYSQL TÊN: QL_NHANSU <br/></h3>
 <h3>BƯỚC 2:MỞ COMMENT FILE config/db.php <br/></h3>
 <p>- Mở đoạn tạo PHONGBAN trước</p>
