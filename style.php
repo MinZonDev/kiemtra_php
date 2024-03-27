@@ -74,6 +74,7 @@ footer {
 
 h1 {
     color: #FF0000;
+    text-align: center;
 }
 
 
